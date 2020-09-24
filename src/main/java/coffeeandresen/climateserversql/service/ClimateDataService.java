@@ -24,9 +24,9 @@ public class ClimateDataService {
     }
 
     private String getCurrentTime() {
-        TimeZone tz = TimeZone.getTimeZone("GMT+2");
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); // Quoted "Z" to indicate UTC, no timezone offset
-        df.setTimeZone(tz);
-        return df.format(new Date());
+        TimeZone timeZone = TimeZone.getTimeZone("GMT+2");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        dateFormat.setTimeZone(timeZone);
+        return dateFormat.format(new Date());
     }
 }

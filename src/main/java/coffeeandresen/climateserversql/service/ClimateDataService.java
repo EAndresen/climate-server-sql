@@ -24,7 +24,7 @@ public class ClimateDataService {
     }
 
     private String getCurrentTime() {
-        TimeZone timeZone = TimeZone.getTimeZone("GMT+2");
+        TimeZone timeZone = TimeZone.getTimeZone("UTC");
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         dateFormat.setTimeZone(timeZone);
         return dateFormat.format(new Date());
